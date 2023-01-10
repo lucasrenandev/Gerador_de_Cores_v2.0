@@ -12,7 +12,7 @@ section {
     display: flex;
 }
 
-.box {
+.box { /* Classe/Elemento criado via javascript */
     width: 20%;
     height: auto;
     display: inline-flex;

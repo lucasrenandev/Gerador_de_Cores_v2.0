@@ -8,19 +8,32 @@ button.addEventListener("click", generateColors)
 // Criando elementos de forma dinâmica
 for(let i = 0; i < 7; i++) {
     const box = document.createElement("div")
+    const text = document.createElement("span")
+    
     box.classList.add("box")
     section.appendChild(box)
+    text.classList.add("text")
+    box.appendChild(text)
 }
 
 // Selecionando todos elementos criados
 const box = document.querySelectorAll(".box")
+const text = document.querySelectorAll(".text")
 
-// Função para gerar as cores
+// Função para gerar texto hexadecimal
+function generateText() {
+    text.forEach(span => {
+        const hexaText = hexaColor()
+        span.textContent = hexaText
+    })
+}
+
+// Função para gerar cores
 function generateColors() {
     box.forEach(color => {
         const newColor = hexaColor()
         color.style.backgroundColor = newColor
-        color.textContent = newColor
+        generateText()
     })
 }
 

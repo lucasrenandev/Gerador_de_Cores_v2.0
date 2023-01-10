@@ -1,0 +1,1 @@
+# gerador-de-cores-v2.0

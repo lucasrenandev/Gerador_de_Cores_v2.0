@@ -15,16 +15,13 @@ section {
 .box { /* Classe/Elemento criado via javascript */
     width: 20%;
     height: auto;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-}
-
-.box span { /* Classe/Elemento criado via javascript */
     font-size: 20px;
     letter-spacing: 1px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
 }
 
 button {
